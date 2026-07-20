@@ -8,7 +8,7 @@ window.RKS_APP_DATA = {
     { label: 'Working sessions', value: '14', meta: 'Structured training modules' },
     { label: 'Brand ecosystems', value: '2', meta: 'RKS Design and PA-AI' },
     { label: 'Reference tools', value: '2', meta: 'Approval map and platform directory' },
-    { label: 'Current assignment', value: '01', meta: 'Working Session 1 deliverables' }
+    { label: 'Current assignment', value: '02', meta: 'Working Session 2 systems audit' }
   ],
 
   sessions: [
@@ -23,7 +23,7 @@ window.RKS_APP_DATA = {
         { brand: 'paai', label: 'PA-AI module', title: 'PA-AI', subtitle: 'Marketing Overview & Ecosystem', url: 'modules/session-01-paai.html', logo: 'assets/paai/logo-white.png' }
       ]
     },
-    { number: 2, title: 'Marketing Resources & Systems', description: 'Learn where shared files, templates, brand assets, historical projects, platforms, and daily marketing resources are stored.', search: 'marketing resources systems shared files templates brand assets software platforms' },
+    { number: 2, title: 'Marketing Resources & Systems', description: 'Learn how Notion, shared files, templates, brand assets, software platforms, and daily marketing resources connect.', search: 'marketing resources systems notion project management shared files templates brand assets software platforms', url: 'modules/session-02.html', button: 'Open Session 2' },
     { number: 3, title: 'Brand Voice & Standards', description: 'Understand the writing styles, messaging principles, visual standards, and brand differences that guide RKS Design and PA-AI.', search: 'brand voice standards writing messaging visual principles rks pa-ai' },
     { number: 4, title: 'Content Marketing & SEO', description: 'Plan, create, optimize, publish, and measure blogs, website content, newsletters, and search-driven marketing initiatives.', search: 'content marketing seo blogs keywords newsletters search console' },
     { number: 5, title: 'Graphic Design & Brand Assets', description: 'Create and manage reusable marketing assets, visual essays, templates, graphics, and approved brand materials.', search: 'graphic design brand assets visual essays templates canva adobe' },
@@ -64,15 +64,16 @@ window.RKS_APP_DATA = {
   ],
 
   deliverables: {
-    sessionNumber: 1,
-    sessionTitle: 'Marketing Overview & Ecosystem',
-    dueText: 'Due before Working Session 2',
+    sessionNumber: 2,
+    sessionTitle: 'Marketing Resources & Systems',
+    dueText: 'Complete after Working Session 2',
     items: [
-      'Prepare 5–10 questions about anything that is unclear',
-      'Document 3 observations or takeaways from your exploration',
-      'List any resources or processes you had difficulty locating or understanding'
+      'Locate the active RKS and PA-AI marketing workspaces in Notion',
+      'Find the approved RKS and PA-AI brand assets and three core templates',
+      'Trace one project from Notion to its shared files and publishing platform',
+      'Document missing links, duplicate files, outdated resources, access issues, or unclear ownership'
     ],
-    futureMessage: 'Future session deliverables will be added here as each working session is built.'
+    futureMessage: 'The Session 3 assignment will be added when the Brand Voice & Standards module is built.'
   },
 
   resources: [

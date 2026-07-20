@@ -48,13 +48,17 @@ document.addEventListener('DOMContentLoaded', () => {
             <div aria-label="Open Session ${session.number} modules" class="session-entry-grid">${entries}</div>
           </article>`;
       }
-      return `
-        <article class="session-card" data-search="${escapeHtml(session.search)}" id="session-${number}">
+      const cardContent = `
           <div class="session-card__topline"><span class="session-number">${number}</span></div>
           <h3>${escapeHtml(session.title)}</h3>
           <p>${escapeHtml(session.description)}</p>
-          <div class="session-card__footer"><span>Working Session ${session.number}</span><span class="reference-label">Outline to be built</span></div>
-        </article>`;
+          <div class="session-card__footer">
+            <span>Working Session ${session.number}</span>
+            <span class="reference-label">${session.url ? escapeHtml(session.button || 'Open module') : 'Outline to be built'}${session.url ? ' →' : ''}</span>
+          </div>`;
+      return session.url
+        ? `<a class="session-card session-card--linked" data-search="${escapeHtml(session.search)}" id="session-${number}" href="${escapeHtml(session.url)}">${cardContent}</a>`
+        : `<article class="session-card" data-search="${escapeHtml(session.search)}" id="session-${number}">${cardContent}</article>`;
     }).join('');
   }
 

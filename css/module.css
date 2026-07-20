@@ -1355,3 +1355,316 @@
     box-shadow: 0 0 0 0 rgba(53, 104, 232, 0);
   }
 }
+
+/* ========================================
+   Session 2: Marketing Resources & Systems
+======================================== */
+
+.brand-system {
+  --module-accent: #344054;
+}
+
+.brand-system .module-hero::before {
+  background: linear-gradient(180deg, #d92d20 0 48%, #3568e8 52% 100%);
+}
+
+.brand-system .module-topbar__brand .brand-mark {
+  background: linear-gradient(135deg, #181a20, #344054);
+}
+
+.systems-flow {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+}
+
+.systems-flow__step {
+  position: relative;
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid var(--color-border, #e5e7eb);
+  border-radius: 15px;
+  background: #fcfcfd;
+}
+
+.systems-flow__step:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  top: 50%;
+  right: -0.61rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2rem;
+  height: 1.2rem;
+  padding: 0;
+  border: 1px solid #d0d5dd;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #667085;
+  font-family: Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+.systems-flow__step > span,
+.resource-card__eyebrow,
+.platform-card > span {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #667085;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.systems-flow__step strong {
+  display: block;
+  color: #101828;
+  font-size: 0.9rem;
+}
+
+.systems-flow__step p {
+  margin: 0.35rem 0 0;
+  font-size: 0.76rem;
+  line-height: 1.55;
+}
+
+.resource-card-grid,
+.platform-grid,
+.standards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.resource-card,
+.platform-card,
+.standards-grid > article {
+  min-width: 0;
+  padding: 1.1rem;
+  border: 1px solid var(--color-border, #e5e7eb);
+  border-radius: 15px;
+  background: #fcfcfd;
+}
+
+.resource-card h3,
+.platform-card h3,
+.standards-grid > article strong {
+  display: block;
+  margin: 0 0 0.35rem;
+  color: #101828;
+  font-size: 0.95rem;
+}
+
+.resource-card p,
+.platform-card p,
+.standards-grid > article p {
+  margin: 0;
+  font-size: 0.84rem;
+  line-height: 1.65;
+}
+
+.platform-card small {
+  display: block;
+  margin-top: 0.8rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid #eaecf0;
+  color: #667085;
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+.checklist-panel {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+  padding: 1rem;
+  border: 1px solid #dfe3ea;
+  border-radius: 16px;
+  background: #f8f9fb;
+}
+
+.checklist-panel h3 {
+  margin: 0 0 0.25rem;
+}
+
+.checklist-panel label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid #e4e7ec;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #344054;
+  font-size: 0.83rem;
+  line-height: 1.55;
+  cursor: pointer;
+}
+
+.checklist-panel input[type="checkbox"] {
+  flex: 0 0 auto;
+  width: 17px;
+  height: 17px;
+  margin-top: 0.15rem;
+  accent-color: var(--module-accent, #344054);
+}
+
+.checklist-panel--two-column {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.checklist-panel--two-column label {
+  min-height: 64px;
+}
+
+.file-system-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(260px, 0.88fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.file-tree,
+.file-rules {
+  padding: 1.15rem;
+  border: 1px solid var(--color-border, #e5e7eb);
+  border-radius: 16px;
+  background: #fcfcfd;
+}
+
+.file-tree > strong {
+  display: block;
+  margin-bottom: 0.65rem;
+  color: #101828;
+}
+
+.file-tree ul {
+  margin: 0;
+  padding-left: 1.15rem;
+  list-style: none;
+}
+
+.file-tree li {
+  position: relative;
+  margin-top: 0.35rem;
+  color: #475467;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.file-tree li::before {
+  content: "";
+  position: absolute;
+  top: 0.72em;
+  left: -0.85rem;
+  width: 0.42rem;
+  height: 1px;
+  background: #98a2b3;
+}
+
+.file-tree li > span {
+  color: #101828;
+  font-weight: 600;
+}
+
+.file-rules h3 {
+  margin-top: 0;
+}
+
+.file-rules ol {
+  margin-bottom: 0;
+}
+
+.file-rules li {
+  font-size: 0.83rem;
+}
+
+.workshop-timeline {
+  display: grid;
+  gap: 0.75rem;
+  counter-reset: workshop;
+}
+
+.workshop-timeline > div {
+  display: grid;
+  grid-template-columns: 42px minmax(150px, 0.42fr) minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: start;
+  padding: 1rem;
+  border: 1px solid var(--color-border, #e5e7eb);
+  border-radius: 14px;
+  background: #fcfcfd;
+}
+
+.workshop-timeline span {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: #101828;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.workshop-timeline strong {
+  padding-top: 0.35rem;
+  color: #101828;
+  font-size: 0.9rem;
+}
+
+.workshop-timeline p {
+  margin: 0;
+  font-size: 0.82rem;
+}
+
+.deliverable-card {
+  border-top: 4px solid #344054;
+}
+
+.deliverable-card .checklist-panel {
+  margin-top: 0;
+}
+
+@media (max-width: 980px) {
+  .systems-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .systems-flow__step:not(:last-child)::after {
+    content: "↓";
+    top: auto;
+    right: 50%;
+    bottom: -0.65rem;
+    transform: translateX(50%);
+  }
+
+  .file-system-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .resource-card-grid,
+  .platform-grid,
+  .standards-grid,
+  .checklist-panel--two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .workshop-timeline > div {
+    grid-template-columns: 42px minmax(0, 1fr);
+  }
+
+  .workshop-timeline p {
+    grid-column: 2;
+  }
+}

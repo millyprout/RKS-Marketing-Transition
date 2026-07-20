@@ -418,5 +418,72 @@ window.RKS_SEARCH_INDEX = [
     "page": "Marketing Platform Directory",
     "url": "resources/platform-directory.html#maintenance",
     "text": "How to Maintain This Directory Treat platform ownership as living operational information. Update ownership whenever a responsibility changes. Add a platform only when its purpose and owner are clear. Mark tools that are discontinued or being evaluated. Review the directory during the final knowledge-transfer session."
+  },
+  {
+    "title": "Marketing Resources & Systems",
+    "page": "Working Session 2",
+    "url": "modules/session-02.html",
+    "text": "Working Session 2 Marketing Resources & Systems Introduce Helena to the software, platforms, shared resources, templates, file systems, and project-management tools used to execute marketing across RKS Design and PA-AI. Primary focus Notion and file systems. Session outcome independent system navigation."
+  },
+  {
+    "title": "Session Overview",
+    "page": "Working Session 2",
+    "url": "modules/session-02.html#overview",
+    "text": "Session Overview Build operational confidence. Main emphasis project management in Notion. Review the reorganized server files. Helena is already logged into the RKS and PA-AI marketing accounts. Understand each platform, navigate Notion, locate shared files, and understand how work moves from planning to publishing and archiving."
+  },
+  {
+    "title": "How the Marketing Systems Connect",
+    "page": "Working Session 2",
+    "url": "modules/session-02.html#system-map",
+    "text": "How the Marketing Systems Connect Plan in Notion calendars meeting notes requests and backlog. Create in Canva Adobe video tools and shared assets. Review in Notion email Teams and leadership feedback. Publish in WordPress Wix LinkedIn YouTube and SocialBee. Store shared server final exports analytics Search Console and reporting."
+  },
+  {
+    "title": "Notion Project Management",
+    "page": "Working Session 2",
+    "url": "modules/session-02.html#notion",
+    "text": "Notion Project Management Marketing Home Projects and Tasks Content Calendar Requests and Backlog Meeting Notes Approvals and Handoffs. Understand brand owner status priority due date next action and links. Find active RKS and PA-AI projects and update a test task."
+  },
+  {
+    "title": "Shared File Organization",
+    "page": "Working Session 2",
+    "url": "modules/session-02.html#files",
+    "text": "Shared File Organization recommended marketing server structure for RKS Design PA-AI Shared Resources and Archive. Confirm top-level server location, working files, approved finals, exports, folder permissions, duplicate files, historical work and final server links."
+  },
+  {
+    "title": "Software & Platform Directory",
+    "page": "Working Session 2",
+    "url": "modules/session-02.html#platforms",
+    "text": "Software and Platform Directory Notion WordPress Elementor WP Engine Wix Canva Adobe Creative Cloud DaVinci Resolve Premiere After Effects Reduct LinkedIn YouTube SocialBee Outlook Teams Google Search Console Analytics. Confirm purpose permissions ownership and workflow."
+  },
+  {
+    "title": "Templates, Brand Assets & Shared Resources",
+    "page": "Working Session 2",
+    "url": "modules/session-02.html#templates",
+    "text": "Templates Brand Assets Shared Resources blog and SEO templates social post templates visual essay templates newsletter resources video production and export templates RKS and PA-AI approved logos colors typography guidelines presentations and photography."
+  },
+  {
+    "title": "Accounts, Permissions & Ownership",
+    "page": "Working Session 2",
+    "url": "modules/session-02.html#access",
+    "text": "Accounts Permissions Ownership Validate access to RKS WordPress PA-AI Wix LinkedIn PA-AI YouTube Canva Adobe video tools and shared server folders. Confirm recovery ownership and two-factor authentication securely. Do not store passwords in the onboarding site or Notion."
+  },
+  {
+    "title": "Working Standards",
+    "page": "Working Session 2",
+    "url": "modules/session-02.html#standards",
+    "text": "Working Standards file naming versions storage source links handoffs and archiving. Use Brand Project Asset date version naming. Separate working versions from approved finals and avoid duplicate files."
+  },
+  {
+    "title": "Live Session Workshop Plan",
+    "page": "Working Session 2",
+    "url": "modules/session-02.html#workshop",
+    "text": "Live Session Workshop Plan Start in Notion trace one RKS project trace one PA-AI project review the reorganized server validate access and capture gaps including missing permissions unclear ownership duplicate files outdated templates and absent links."
+  },
+  {
+    "title": "Session 2 Assignment",
+    "page": "Working Session 2",
+    "url": "modules/session-02.html#deliverables",
+    "text": "Complete a Marketing Systems Navigation Audit. Locate RKS and PA-AI Notion workspaces, approved logos, blog social and video templates, Alex SEO recommendations, content calendar, and trace one project from Notion to shared files and publishing platform. Document missing links duplicate files outdated resources access issues and unclear ownership."
   }
+
 ];
