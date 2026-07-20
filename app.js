@@ -81,25 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
       </article>`).join('');
   }
 
-  function renderDeliverables() {
-    const container = document.getElementById('taskList');
-    if (!container || !APP_DATA.deliverables) return;
-    const d = APP_DATA.deliverables;
-    container.innerHTML = `
-      <div class="deliverable-session-heading" data-search="session ${d.sessionNumber} ${escapeHtml(d.sessionTitle)}">
-        <strong>Working Session ${d.sessionNumber}: ${escapeHtml(d.sessionTitle)}</strong>
-        <small>${escapeHtml(d.dueText)}</small>
-      </div>
-      ${(d.items || []).map((item, index) => `
-        <label class="task-item" data-search="${escapeHtml(item)}">
-          <input type="checkbox" data-deliverable-id="session-${d.sessionNumber}-${index + 1}"/>
-          <span><strong>${escapeHtml(item)}</strong><small>Helena · ${escapeHtml(d.dueText)}</small></span>
-        </label>`).join('')}
-      <div class="deliverable-future-note">
-        <strong>Future Session Deliverables</strong>
-        <small>${escapeHtml(d.futureMessage)}</small>
-      </div>`;
-  }
 
   function renderResources() {
     const container = document.getElementById('resourceList');
@@ -116,7 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
     renderMetrics();
     renderSessions();
     renderBrands();
-    renderDeliverables();
     renderResources();
   }
 
@@ -226,13 +206,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('click', event => {
     if (event.target.closest('.search, #globalSearchResults, .global-search-results')) return;
     resetSearch();
-  });
-
-  document.getElementById('taskList')?.addEventListener('change', event => {
-    const checkbox = event.target.closest('input[type="checkbox"]');
-    if (!checkbox) return;
-    checkbox.closest('.task-item')?.classList.toggle('is-complete', checkbox.checked);
-    showToast(checkbox.checked ? 'Deliverable marked complete' : 'Deliverable reopened');
   });
 
   document.getElementById('resourceList')?.addEventListener('click', event => {

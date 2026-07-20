@@ -8,7 +8,7 @@ window.RKS_APP_DATA = {
     { label: 'Working sessions', value: '14', meta: 'Structured training modules' },
     { label: 'Brand ecosystems', value: '2', meta: 'RKS Design and PA-AI' },
     { label: 'Reference tools', value: '2', meta: 'Approval map and platform directory' },
-    { label: 'Current assignment', value: '02', meta: 'Working Session 2 systems audit' }
+    { label: 'Knowledge areas', value: '4', meta: 'Sessions, brands, systems, and resources' }
   ],
 
   sessions: [
@@ -62,19 +62,6 @@ window.RKS_APP_DATA = {
       logo: 'assets/paai/logo-gradient-mark.png'
     }
   ],
-
-  deliverables: {
-    sessionNumber: 2,
-    sessionTitle: 'Marketing Resources & Systems',
-    dueText: 'Complete after Working Session 2',
-    items: [
-      'Locate the active RKS and PA-AI marketing workspaces in Notion',
-      'Find the approved RKS and PA-AI brand assets and three core templates',
-      'Trace one project from Notion to its shared files and publishing platform',
-      'Document missing links, duplicate files, outdated resources, access issues, or unclear ownership'
-    ],
-    futureMessage: 'The Session 3 assignment will be added when the Brand Voice & Standards module is built.'
-  },
 
   resources: [
     { id: 'brand-modules', icon: 'Aa', title: 'Brand Modules', description: 'RKS and PA-AI messaging and visual references', url: 'modules/rks-brand.html' },
