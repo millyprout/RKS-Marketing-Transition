@@ -1,0 +1,160 @@
+.button {
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast);
+}
+.button:hover { transform: translateY(-1px); }
+.button--primary { background: var(--color-dark); color: #fff; }
+.button--primary:hover { background: #2a2d31; }
+.button--secondary { background: var(--color-surface); border-color: var(--color-line-strong); }
+.button--secondary:hover { border-color: #aeb4bc; }
+.button--ghost { color: #cbd0d6; background: transparent; border-color: #35383d; }
+.button--ghost:hover { background: #24272b; }
+.button--full { width: 100%; }
+.button--brand { width: 100%; margin-top: 24px; color: #fff; background: var(--brand-color); }
+
+.icon-button {
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--color-line);
+  border-radius: 12px;
+  background: var(--color-surface);
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: var(--radius-pill);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.status-pill--success { color: var(--color-success); background: var(--color-success-soft); }
+.status-pill--warning { color: var(--color-warning); background: var(--color-warning-soft); }
+.status-pill--neutral { color: #5d6570; background: #eef0f3; }
+
+.progress { height: 7px; overflow: hidden; border-radius: var(--radius-pill); background: #33373c; }
+.progress__bar { height: 100%; border-radius: inherit; background: #fff; transition: width var(--transition-base); }
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--color-paai);
+  font-weight: 700;
+}
+
+.text-button { padding: 0; border: 0; background: transparent; color: var(--color-ink); font-size: 0.8rem; font-weight: 700; }
+.text-button:hover { text-decoration: underline; }
+
+.panel {
+  padding: 28px;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+.panel__header { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; margin-bottom: 20px; }
+.panel__header h2 { font-size: 1.25rem; }
+
+.toast {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 50;
+  max-width: 360px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  color: #fff;
+  background: var(--color-dark);
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+.toast.is-visible { opacity: 1; transform: translateY(0); }
+
+
+/* Global dashboard search */
+.search {
+  position: relative;
+  width: clamp(320px, 38vw, 620px);
+  min-width: 0;
+  min-height: 52px;
+  padding: 0 50px 0 18px;
+  border: 1px solid var(--color-line);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--color-muted);
+  background: var(--color-surface);
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.03);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+}
+.search:focus-within {
+  border-color: #98a2b3;
+  box-shadow: 0 0 0 4px rgba(52, 64, 84, 0.08);
+  background: #fff;
+}
+.search__icon {
+  flex: 0 0 26px;
+  width: 26px;
+  height: 26px;
+  color: #667085;
+}
+.search input {
+  flex: 1 1 auto;
+  width: auto;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  color: var(--color-ink);
+  background: transparent;
+  font: inherit;
+  font-size: 0.96rem;
+  line-height: 1.35;
+}
+.search input::placeholder { color: #8f96a3; opacity: 1; }
+.search__clear {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 0;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  color: #667085;
+  background: transparent;
+  font-size: 1.25rem;
+  line-height: 1;
+  opacity: 0;
+  pointer-events: none;
+  cursor: pointer;
+}
+.search__clear.is-visible { opacity: 1; pointer-events: auto; }
+.search__clear:hover { color: #101828; background: #f2f4f7; }
+
+/* Use one consistent clear control across browsers. */
+.search input::-webkit-search-cancel-button,
+.search input::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}

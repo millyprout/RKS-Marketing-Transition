@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="RKS Marketing Transition and Onboarding dashboard" name="description"/>
+<title>Marketing Transition &amp; Onboarding</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="css/design-system.css" rel="stylesheet"/>
+<link href="css/components.css" rel="stylesheet"/>
+<link href="css/layout.css" rel="stylesheet"/>
+<link href="css/dashboard.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="app-shell">
+<aside aria-label="Primary navigation" class="sidebar" id="sidebar">
+<div class="sidebar__brand">
+<div aria-hidden="true" class="brand-mark"><img alt="" src="assets/logos/rks-mark-white.png"/></div>
+<div>
+<p class="eyebrow">RKS Design</p>
+<h1 class="sidebar__title">Marketing Hub</h1>
+</div>
+</div>
+<nav class="nav-list">
+<a aria-current="page" aria-label="Dashboard" class="nav-item is-active" href="#overview">
+<span class="nav-item__icon">⌂</span>
+<span>Dashboard</span>
+</a>
+<a aria-label="Working Sessions" class="nav-item" href="#sessions">
+<span class="nav-item__icon">▦</span>
+<span>Working Sessions</span>
+</a>
+<a aria-label="Brand Modules" class="nav-item" href="#brands">
+<span class="nav-item__icon">◇</span>
+<span>Brand Modules</span>
+</a>
+<a aria-label="Resources" class="nav-item" href="#resources">
+<span class="nav-item__icon">□</span>
+<span>Resources</span>
+</a>
+</nav>
+<div class="sidebar__footer">
+<div class="sidebar-progress">
+<div class="sidebar-progress__header">
+<span>Onboarding progress</span>
+<strong id="sidebarProgressLabel">0%</strong>
+</div>
+<div aria-label="Onboarding progress" class="progress">
+<div class="progress__bar" id="sidebarProgressBar" style="width:0%"></div>
+</div>
+</div>
+<button aria-expanded="true" aria-label="Collapse navigation" class="sidebar-toggle" id="collapseSidebar" title="Collapse navigation" type="button">
+<span aria-hidden="true" class="sidebar-toggle__icon">‹</span>
+<span class="sidebar-toggle__label">Collapse navigation</span>
+</button>
+</div>
+</aside>
+<main class="main-content">
+<header class="topbar">
+<button aria-label="Open navigation" class="icon-button topbar__menu" id="openSidebar" type="button">☰</button>
+<div>
+<p class="eyebrow">Marketing Transition &amp; Onboarding</p>
+<h2 class="topbar__title">Dashboard</h2>
+</div>
+<div class="topbar__actions">
+<label aria-label="Search dashboard" class="search">
+<svg aria-hidden="true" class="search__icon" fill="none" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="2"></circle><path d="m16 16 4 4" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg>
+<input autocomplete="off" id="dashboardSearch" placeholder="Search sessions, resources, people..." type="text"/>
+<button aria-label="Clear search" class="search__clear" id="clearSearch" type="button">×</button>
+<div aria-label="Search results" class="global-search-results" id="globalSearchResults" role="listbox"></div>
+</label>
+</div>
+</header>
+<div class="page-content" id="overview">
+<section class="hero-panel">
+<div class="hero-panel__content">
+
+<h2>A centralized space for marketing knowledge, resources, and transition materials.</h2>
+<p>This application centralizes working sessions, brand knowledge, systems, resources, approvals, and practical deliverables for RKS Design and PA-AI.</p>
+<div class="hero-panel__actions">
+<a class="button button--primary" href="#sessions">Continue onboarding</a>
+<a class="button button--secondary" href="#brands">Explore brand modules</a>
+</div>
+</div>
+
+</section>
+<section aria-label="Dashboard metrics" class="metric-grid"><article class="metric-card"><span class="metric-card__label">Working sessions</span><strong>14</strong><span class="metric-card__meta">Structured training topics</span></article><article class="metric-card"><span class="metric-card__label">Brand ecosystems</span><strong>2</strong><span class="metric-card__meta">RKS Design and PA-AI</span></article><article class="metric-card"><span class="metric-card__label">Reference tools</span><strong>2</strong><span class="metric-card__meta">Approval map and platform directory</span></article><article class="metric-card"><span class="metric-card__label">Current assignment</span><strong>01</strong><span class="metric-card__meta">Session 1 follow-up</span></article></section>
+<section class="content-section" id="sessions">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Learning path</p>
+<h2>Working Sessions</h2>
+<p>Open any working session as a reference. Session numbers provide organization, not completion status.</p>
+</div>
+
+</div>
+<div aria-live="polite" class="search-feedback" id="searchFeedback"></div>
+<div class="session-grid" id="sessionGrid">
+<article class="session-card session-card--featured" data-search="marketing overview ecosystem rks pa-ai priorities responsibilities approvals session 1" id="search-marketing-overview-ecosystem">
+<div class="session-feature__copy">
+<div class="session-card__topline">
+<span class="session-number">01</span>
+
+</div>
+<p class="eyebrow">Working Session 01</p>
+<h3>Marketing Overview &amp; Ecosystem</h3>
+<p>Explore both brand perspectives to understand how RKS Design and PA-AI differ, how marketing supports each organization, and how responsibilities, approvals, platforms, and priorities connect.</p>
+<div class="session-feature__meta"><span>Two brand modules</span><span>Open either module</span></div>
+</div>
+<div aria-label="Open Session 1 modules" class="session-entry-grid">
+<a class="session-entry session-entry--rks" href="modules/session-01-rks.html">
+<span class="session-entry__mark"><img alt="" src="assets/logos/rks-mark-white.png"/></span>
+<span><small>RKS Design module</small><strong>RKS Design</strong><em>Marketing Overview &amp; Ecosystem</em></span>
+<span aria-hidden="true" class="session-entry__arrow">→</span>
+</a>
+<a class="session-entry session-entry--paai" href="modules/session-01-paai.html">
+<span class="session-entry__mark"><img alt="" src="assets/paai/logo-white.png"/></span>
+<span><small>PA-AI module</small><strong>PA-AI</strong><em>Marketing Overview &amp; Ecosystem</em></span>
+<span aria-hidden="true" class="session-entry__arrow">→</span>
+</a>
+</div>
+</article>
+<article class="session-card" data-search="marketing resources systems shared files templates brand assets software platforms" id="search-marketing-resources-systems">
+<div class="session-card__topline">
+<span class="session-number">02</span>
+
+</div>
+<h3>Marketing Resources &amp; Systems</h3>
+<p>Learn where shared files, templates, brand assets, historical projects, platforms, and daily marketing resources are stored.</p>
+<div class="session-card__footer">
+<span>Session 2</span>
+<button class="text-button" type="button">View outline →</button>
+</div>
+</article>
+<article class="session-card" data-search="brand voice standards writing messaging visual principles rks pa-ai" id="search-brand-voice-standards">
+<div class="session-card__topline">
+<span class="session-number">03</span>
+
+</div>
+<h3>Brand Voice &amp; Standards</h3>
+<p>Understand the writing styles, messaging principles, visual standards, and brand differences that guide RKS Design and PA-AI.</p>
+<div class="session-card__footer">
+<span>Session 3</span>
+<button class="text-button" type="button">View outline →</button>
+</div>
+</article>
+<article class="session-card" data-search="content marketing seo blogs keywords newsletters search console" id="search-content-marketing-seo">
+<div class="session-card__topline">
+<span class="session-number">04</span>
+
+</div>
+<h3>Content Marketing &amp; SEO</h3>
+<p>Plan, create, optimize, publish, and measure blogs, website content, newsletters, and search-driven marketing initiatives.</p>
+<div class="session-card__footer">
+<span>Session 4</span>
+<button class="text-button" type="button">View outline →</button>
+</div>
+</article>
+<article class="session-card" data-search="graphic design brand assets visual essays templates canva adobe" id="search-graphic-design-brand-assets">
+<div class="session-card__topline">
+<span class="session-number">05</span>
+
+</div>
+<h3>Graphic Design &amp; Brand Assets</h3>
+<p>Create and manage reusable marketing assets, visual essays, templates, graphics, and approved brand materials.</p>
+<div class="session-card__footer">
+<span>Session 5</span>
+<button class="text-button" type="button">View outline →</button>
+</div>
+</article>
+<article class="session-card" data-search="social media management linkedin instagram youtube socialbee scheduling" id="search-social-media-management">
+<div class="session-card__topline">
+<span class="session-number">06</span>
+
+</div>
+<h3>Social Media Management</h3>
+<p>Plan, create, schedule, publish, recycle, and measure social content across RKS Design and PA-AI channels.</p>
+<div class="session-card__footer">
+<span>Session 6</span>
+<button class="text-button" type="button">View outline →</button>
+</div>
+</article>
+<article class="session-card" data-search="website front-end back-end management wordpress elementor wix publishing" id="search-website-front-end-back-end-management">
+<div class="session-card__topline">
+<span class="session-number">07</span>
+
+</div>
+<h3>Website Front-End &amp; Back-End Management</h3>
+<p>Manage the RKS WordPress and PA-AI Wix websites, including page editing, publishing, templates, SEO fields, and quality control.</p>
+<div class="session-card__footer">
+<span>Session 7</span>
+<button class="text-button" type="button">View outline →</button>
+</div>
+</article>
+<article class="session-card" data-search="video production studio equipment cameras audio lighting interviews" id="search-video-production-studio-equipment">
+<div class="session-card__topline">
+<span class="session-number">08</span>
+
+</div>
+<h3>Video Production &amp; Studio Equipment</h3>
+<p>Prepare and operate the studio, cameras, audio, lighting, interviews, file handling, and production equipment.</p>
+<div class="session-card__footer">
+<span>Session 8</span>
+<button class="text-button" type="button">View outline →</button>
+</div>
+</article>
+<article class="session-card" data-search="video editing distribution workflow davinci premiere reduct youtube vimeo" id="search-video-editing-distribution-workflow">
+<div class="session-card__topline">
+<span class="session-number">09</span>
+
+</div>
+<h3>Video Editing &amp; Distribution Workflow</h3>
+<p>Edit, review, export, organize, publish, and distribute long-form and short-form video content across marketing channels.</p>
+<div class="session-card__footer">
+<span>Session 9</span>
+<button class="text-button" type="button">View outline →</button>
+</div>
+</article>
+<article class="session-card" data-search="website pr marketing workflows press releases approvals publishing" id="search-website-pr-marketing-workflows">
+<div class="session-card__topline">
+<span class="session-number">10</span>
+
+</div>
+<h3>Website, PR &amp; Marketing Workflows</h3>
+<p>Follow the recurring workflows for website updates, press releases, media coordination, approvals, publishing, and promotion.</p>
+<div class="session-card__footer">
+<span>Session 10</span>
+<button class="text-button" type="button">View outline →</button>
+</div>
+</article>
+<article class="session-card" data-search="marketing operations project management calendars approvals stakeholders" id="search-marketing-operations-project-management">
+<div class="session-card__topline">
+<span class="session-number">11</span>
+
+</div>
+<h3>Marketing Operations &amp; Project Management</h3>
+<p>Manage priorities, calendars, requests, approvals, project tracking, stakeholders, and day-to-day marketing operations.</p>
+<div class="session-card__footer">
+<span>Session 11</span>
+<button class="text-button" type="button">View outline →</button>
+</div>
+</article>
+<article class="session-card" data-search="ai tools marketing efficiency chatgpt claude midjourney firefly automation" id="search-ai-tools-marketing-efficiency">
+<div class="session-card__topline">
+<span class="session-number">12</span>
+
+</div>
+<h3>AI Tools &amp; Marketing Efficiency</h3>
+<p>Use AI tools responsibly to accelerate research, writing, design, organization, repurposing, and routine marketing work.</p>
+<div class="session-card__footer">
+<span>Session 12</span>
+<button class="text-button" type="button">View outline →</button>
+</div>
+</article>
+<article class="session-card" data-search="weekly marketing workflow cadence planning meetings publishing reporting" id="search-weekly-marketing-workflow">
+<div class="session-card__topline">
+<span class="session-number">13</span>
+
+</div>
+<h3>Weekly Marketing Workflow</h3>
+<p>Understand the expected weekly cadence for planning, content creation, meetings, publishing, reporting, and follow-up.</p>
+<div class="session-card__footer">
+<span>Session 13</span>
+<button class="text-button" type="button">View outline →</button>
+</div>
+</article>
+<article class="session-card" data-search="knowledge transfer q&amp;a questions ownership access open projects readiness" id="search-knowledge-transfer-q-a">
+<div class="session-card__topline">
+<span class="session-number">14</span>
+
+</div>
+<h3>Knowledge Transfer &amp; Q&amp;A</h3>
+<p>Resolve remaining questions, confirm ownership and access, review open projects, and validate readiness to manage the marketing ecosystem independently.</p>
+<div class="session-card__footer">
+<span>Session 14</span>
+<button class="text-button" type="button">View outline →</button>
+</div>
+</article>
+</div>
+</section>
+<section class="content-section" id="brands">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Brand knowledge</p>
+<h2>Brand Modules</h2>
+<p>Two distinct brands, one standardized application experience.</p>
+</div>
+</div>
+<div class="brand-grid">
+<article class="brand-card brand-card--rks" id="search-rks-design">
+<div class="brand-card__accent"></div>
+<div class="brand-card__body">
+<div class="brand-card__header">
+<div class="brand-logo"><img alt="RKS Design" src="assets/logos/rks-mark-white.png"/></div>
+<span class="reference-label">RKS brand reference</span>
+</div>
+<h3>RKS Design</h3>
+<p>Human-centered industrial design, innovation strategy, engineering, and product development.</p>
+<ul aria-label="RKS module topics" class="tag-list">
+<li>Positioning</li><li>Services</li><li>Audience</li><li>Marketing</li>
+</ul>
+<a class="button button--brand" href="modules/rks-brand.html">Open RKS module</a>
+</div>
+</article>
+<article class="brand-card brand-card--paai" id="search-pa-ai">
+<div class="brand-card__accent"></div>
+<div class="brand-card__body">
+<div class="brand-card__header">
+<div class="brand-logo"><img alt="PA-AI layered logo" src="assets/paai/logo-gradient-mark.png"/></div>
+<span class="reference-label">PA-AI brand reference</span>
+</div>
+<h3>PA-AI</h3>
+<p>The Human Intelligence Layer that helps organizations align AI decisions with human trust, adoption, and value.</p>
+<ul aria-label="PA-AI module topics" class="tag-list">
+<li>Category</li><li>Methodology</li><li>Audience</li><li>Thought leadership</li>
+</ul>
+<a class="button button--brand" href="modules/paai-brand.html">Open PA-AI module</a>
+</div>
+</article>
+</div>
+</section>
+<section class="content-section two-column-section" id="resources">
+<article class="panel">
+<div class="panel__header">
+<div>
+<p class="eyebrow">Action center</p>
+<h2>Current Deliverables</h2>
+</div>
+<span class="reference-label">Session 1 assignment</span>
+</div>
+<div class="task-list" id="taskList">
+<label class="task-item"><input type="checkbox"/><span><strong>Prepare for Session 1</strong><small>Helena · Before the first working session</small></span></label>
+<label class="task-item"><input type="checkbox"/><span><strong>Review RKS positioning module</strong><small>Helena · This week</small></span></label>
+<label class="task-item"><input type="checkbox"/><span><strong>Confirm PA-AI approval contacts</strong><small>Helena · Transition backlog</small></span></label>
+<label class="task-item"><input type="checkbox"/><span><strong>Organize shared brand assets</strong><small>Helena · Session 3</small></span></label>
+<label class="task-item"><input type="checkbox"/><span><strong>Validate dashboard component system</strong><small>Milestone 1 · Foundation</small></span></label>
+</div>
+</article>
+<article class="panel">
+<div class="panel__header">
+<div>
+<p class="eyebrow">Reference library</p>
+<h2>Quick Resources</h2>
+</div>
+</div>
+<div class="resource-list">
+<a class="resource-item" href="modules/rks-brand.html" id="search-brand-modules"><span class="resource-item__icon">Aa</span><span><strong>Brand Modules</strong><small>RKS and PA-AI messaging and visual references</small></span><span>→</span></a>
+<a class="resource-item" href="resources/approval-map.html" id="search-approval-map"><span class="resource-item__icon">✓</span><span><strong>Approval Map</strong><small>Who reviews and approves what</small></span><span>→</span></a>
+<a class="resource-item" href="resources/platform-directory.html" id="search-platform-directory"><span class="resource-item__icon">⌘</span><span><strong>Platform Directory</strong><small>Websites, tools, and ownership</small></span><span>→</span></a>
+<a class="resource-item" href="#" id="search-marketing-backlog"><span class="resource-item__icon">▤</span><span><strong>Marketing Backlog</strong><small>Active, recurring, and future work</small></span><span>→</span></a>
+</div>
+</article>
+</section>
+</div>
+</main>
+</div>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script src="search-index.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
