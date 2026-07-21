@@ -5,7 +5,7 @@ window.RKS_APP_DATA = {
   },
 
   metrics: [
-    { label: 'Working sessions', value: '14', meta: 'Structured training modules' },
+    { label: 'Working sessions', value: '13', meta: 'Structured training modules' },
     { label: 'Brand ecosystems', value: '2', meta: 'RKS Design and PA-AI' },
     { label: 'Reference tools', value: '2', meta: 'Approval map and platform directory' },
     { label: 'Knowledge areas', value: '4', meta: 'Sessions, brands, systems, and resources' }
@@ -24,7 +24,7 @@ window.RKS_APP_DATA = {
       ]
     },
     { number: 2, title: 'Marketing Resources & Systems', description: 'Learn how Notion, shared files, templates, brand assets, software platforms, and daily marketing resources connect.', search: 'marketing resources systems notion project management shared files templates brand assets software platforms', url: 'modules/session-02.html', button: 'Open Session 2' },
-    { number: 3, title: 'Brand Voice & Standards', description: 'Understand the writing styles, messaging principles, visual standards, and brand differences that guide RKS Design and PA-AI.', search: 'brand voice standards writing messaging visual principles rks pa-ai' },
+    { number: 3, title: 'Brand Voice, AI Tools & Marketing Efficiency', description: 'Review RKS Design and PA-AI brand voice, then build custom GPTs, prompt systems, and AI-supported workflows that improve marketing speed without sacrificing quality.', search: 'brand voice ai tools marketing efficiency custom gpts prompt engineering automation rks pa-ai', url: 'modules/session-03.html', button: 'Open Session 3' },
     { number: 4, title: 'Content Marketing & SEO', description: 'Plan, create, optimize, publish, and measure blogs, website content, newsletters, and search-driven marketing initiatives.', search: 'content marketing seo blogs keywords newsletters search console' },
     { number: 5, title: 'Graphic Design & Brand Assets', description: 'Create and manage reusable marketing assets, visual essays, templates, graphics, and approved brand materials.', search: 'graphic design brand assets visual essays templates canva adobe' },
     { number: 6, title: 'Social Media Management', description: 'Plan, create, schedule, publish, recycle, and measure social content across RKS Design and PA-AI channels.', search: 'social media management linkedin instagram youtube socialbee scheduling' },
@@ -33,9 +33,8 @@ window.RKS_APP_DATA = {
     { number: 9, title: 'Video Editing & Distribution Workflow', description: 'Edit, review, export, organize, publish, and distribute video content across the appropriate platforms.', search: 'video editing distribution davinci premiere reduct youtube linkedin' },
     { number: 10, title: 'Website, PR & Marketing Workflows', description: 'Coordinate website updates, press releases, media outreach, approvals, publishing, and cross-channel promotion.', search: 'website pr marketing workflows press releases media outreach approvals publishing' },
     { number: 11, title: 'Marketing Operations & Project Management', description: 'Manage calendars, priorities, requests, project status, approvals, handoffs, and documentation.', search: 'marketing operations project management calendars priorities requests handoffs' },
-    { number: 12, title: 'AI Tools & Marketing Efficiency', description: 'Use AI tools responsibly to accelerate research, writing, design, organization, repurposing, and routine marketing work.', search: 'ai tools marketing efficiency chatgpt claude research writing design' },
-    { number: 13, title: 'Weekly Marketing Workflow', description: 'Understand the expected weekly cadence for planning, content creation, meetings, publishing, reporting, and follow-up.', search: 'weekly marketing workflow cadence planning meetings publishing reporting' },
-    { number: 14, title: 'Knowledge Transfer & Q&A', description: 'Resolve remaining questions, confirm ownership and access, review open projects, and validate readiness to manage the marketing ecosystem independently.', search: 'knowledge transfer q&a questions ownership access open projects readiness' }
+    { number: 12, title: 'Weekly Marketing Workflow', description: 'Understand the expected weekly cadence for planning, content creation, meetings, publishing, reporting, and follow-up.', search: 'weekly marketing workflow cadence planning meetings publishing reporting' },
+    { number: 13, title: 'Knowledge Transfer & Q&A', description: 'Resolve remaining questions, confirm ownership and access, review open projects, and validate readiness to manage the marketing ecosystem independently.', search: 'knowledge transfer q&a questions ownership access open projects readiness' }
   ],
 
   brands: [
