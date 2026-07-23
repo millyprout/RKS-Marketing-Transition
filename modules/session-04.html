@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>Session 4 · Content Marketing &amp; Editorial Workflow | RKS Marketing Onboarding</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="../css/design-system.css" rel="stylesheet"/>
+  <link href="../css/components.css" rel="stylesheet"/>
+  <link href="../css/module.css" rel="stylesheet"/>
+  <style>
+    .campaign-flow,
+    .monthly-calendar {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.25rem;
+    }
+
+    .campaign-flow {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .campaign-flow__step,
+    .calendar-week {
+      border: 1px solid var(--border-color, #dfe3ea);
+      border-radius: 18px;
+      background: #fff;
+      padding: 1.25rem;
+      min-width: 0;
+    }
+
+    .campaign-flow__step span,
+    .calendar-week > span {
+      display: block;
+      margin-bottom: .45rem;
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--text-muted, #687087);
+    }
+
+    .campaign-flow__step strong,
+    .calendar-week strong {
+      display: block;
+      margin-bottom: .5rem;
+    }
+
+    .monthly-calendar {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .calendar-day {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-color, #dfe3ea);
+    }
+
+    .calendar-day:first-of-type {
+      margin-top: .75rem;
+    }
+
+    .calendar-day b {
+      display: block;
+      margin-bottom: .25rem;
+    }
+
+    .ecosystem-output-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1.25rem;
+    }
+
+    .ecosystem-output {
+      border: 1px solid var(--border-color, #dfe3ea);
+      border-radius: 16px;
+      background: #fff;
+      padding: 1rem 1.1rem;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    @media (max-width: 1050px) {
+      .campaign-flow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .monthly-calendar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .ecosystem-output-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 620px) {
+      .campaign-flow,
+      .monthly-calendar,
+      .ecosystem-output-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body class="module-shell brand-system">
+  <header class="module-topbar">
+    <a class="button button--secondary" href="../index.html">← Back to dashboard</a>
+    <div class="module-topbar__brand">
+      <div aria-hidden="true" class="brand-mark">04</div>
+      <div>
+        <strong>RKS Marketing</strong>
+        <span>Transition &amp; Onboarding</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="module-container">
+    <div class="module-breadcrumbs">
+      <a href="../index.html">Dashboard</a>
+      <span>/</span>
+      <span>Session 4 · Content Marketing &amp; Editorial Workflow</span>
+    </div>
+
+    <section class="module-hero">
+      <div class="module-hero__grid">
+        <div>
+          <p class="module-kicker">Working Session 4</p>
+          <h1>Content Marketing &amp; Editorial Workflow</h1>
+          <p>Learn how RKS turns one research-backed idea into an integrated campaign spanning SEO blogs, LinkedIn, carousels, visual essays, newsletters, video, and downloadable resources.</p>
+        </div>
+        <div class="module-meta">
+          <div class="module-meta__item">
+            <span>Primary focus</span>
+            <strong>Integrated content campaigns</strong>
+          </div>
+          <div class="module-meta__item">
+            <span>Applies to</span>
+            <strong>RKS Design + PA-AI</strong>
+          </div>
+          <div class="module-meta__item">
+            <span>Session outcome</span>
+            <strong>Plan a one-month campaign</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="module-layout">
+      <aside class="module-toc">
+        <strong>On this page</strong>
+        <a href="#overview">Session overview</a>
+        <a href="#objectives">Learning objectives</a>
+        <a href="#process">RKS content process</a>
+        <a href="#strategy">Proposed RKS strategy</a>
+        <a href="#calendar">Editorial calendar</a>
+        <a href="#blog-seo">Blog &amp; SEO resources</a>
+        <a href="#social">Social content templates</a>
+        <a href="#visual-essays">Visual essay templates</a>
+        <a href="#newsletter">Newsletter workflow</a>
+        <a href="#video">Video workflow</a>
+        <a href="#paai">PA-AI priorities</a>
+        <a href="#ai-acceleration">AI-assisted execution</a>
+        <a href="#deliverables">Session deliverable</a>
+      </aside>
+
+      <article class="module-content">
+        <section class="content-card" id="overview">
+          <p class="module-kicker">Session Overview</p>
+          <h2>Build Thought Leadership, Not Isolated Content</h2>
+          <p class="section-intro">Content marketing at RKS is designed to establish thought leadership, not simply publish blogs. Every piece should educate the market while reinforcing RKS Design’s expertise in Human-Centered Design and Psycho-Aesthetics®.</p>
+          <div class="info-grid">
+            <div class="info-tile">
+              <span>Strategy</span>
+              <strong>One Research-Backed Idea</strong>
+              <p>Begin with a meaningful market conversation, question, tension, or opportunity that RKS can address from a distinctive human-centered perspective.</p>
+            </div>
+            <div class="info-tile">
+              <span>Execution</span>
+              <strong>Many Connected Formats</strong>
+              <p>Turn the central idea into blogs, social posts, carousels, video, newsletter content, infographics, and a downloadable resource.</p>
+            </div>
+            <div class="info-tile">
+              <span>Differentiation</span>
+              <strong>Human Intelligence</strong>
+              <p>Use Psycho-Aesthetics® and Human Intelligence to uncover motivations, confidence gaps, emotional barriers, trust issues, and reasons existing solutions fail.</p>
+            </div>
+          </div>
+          <div class="callout">
+            <strong>During this session</strong>
+            <p>Review the RKS content creation workflow, editorial planning, blog writing and SEO, social strategy, design templates, newsletter production, video integration, and immediate PA-AI content priorities.</p>
+          </div>
+        </section>
+
+        <section class="content-card" id="objectives">
+          <p class="module-kicker">Learning Objectives</p>
+          <h2>What Helena Should Be Able to Do</h2>
+          <div class="checklist-panel">
+            <label><input type="checkbox"/> Understand the end-to-end content production process.</label>
+            <label><input type="checkbox"/> Write and optimize an SEO blog.</label>
+            <label><input type="checkbox"/> Repurpose one idea into multiple content formats.</label>
+            <label><input type="checkbox"/> Use the existing content and design templates.</label>
+            <label><input type="checkbox"/> Publish content using the RKS workflow.</label>
+            <label><input type="checkbox"/> Understand the proposed RKS content strategy.</label>
+            <label><input type="checkbox"/> Understand the immediate marketing priorities for PA-AI.</label>
+          </div>
+        </section>
+
+        <section class="content-card" id="process">
+          <p class="module-kicker">Module 1</p>
+          <h2>The RKS Content Marketing Process</h2>
+          <p class="section-intro">Rather than asking, “What should we post this week?” begin with a better question: <strong>What conversation is already happening that RKS can uniquely contribute to?</strong></p>
+
+          <div class="campaign-flow">
+            <div class="campaign-flow__step">
+              <span>Step 1</span>
+              <strong>Find the Opportunity</strong>
+              <p>Identify a market conversation, emerging tension, audience question, or search opportunity.</p>
+            </div>
+            <div class="campaign-flow__step">
+              <span>Step 2</span>
+              <strong>Human Intelligence Analysis</strong>
+              <p>Interpret the topic through Psycho-Aesthetics®, motivation, confidence, emotion, trust, and adoption.</p>
+            </div>
+            <div class="campaign-flow__step">
+              <span>Step 3</span>
+              <strong>Create the White Paper</strong>
+              <p>Build one substantial research asset that becomes the source of truth for the campaign.</p>
+            </div>
+            <div class="campaign-flow__step">
+              <span>Step 4</span>
+              <strong>Build the Ecosystem</strong>
+              <p>Translate the research into channel-specific formats without losing the core thesis.</p>
+            </div>
+            <div class="campaign-flow__step">
+              <span>Step 5</span>
+              <strong>Publish Through the Calendar</strong>
+              <p>Use one research project to support an entire month of coordinated marketing.</p>
+            </div>
+          </div>
+
+          <h3>Opportunity Sources</h3>
+          <div class="standards-grid">
+            <article><strong>Industry Conversation</strong><p>Reddit discussions, LinkedIn conversations, conferences, customer interviews, and industry news.</p></article>
+            <article><strong>Research &amp; Reports</strong><p>Gartner, McKinsey, healthcare reports, manufacturing research, and AI industry analysis.</p></article>
+            <article><strong>Search Signals</strong><p>Google Trends, Search Console, SEO research, keywords, search intent, and recurring audience questions.</p></article>
+          </div>
+
+          <h3>Human Intelligence Questions</h3>
+          <div class="checklist-panel">
+            <label><input type="checkbox"/> What hidden motivations exist?</label>
+            <label><input type="checkbox"/> Where are people lacking confidence?</label>
+            <label><input type="checkbox"/> What emotional barriers exist?</label>
+            <label><input type="checkbox"/> What trust gaps exist?</label>
+            <label><input type="checkbox"/> Why are current solutions failing?</label>
+          </div>
+
+          <h3>One White Paper Can Become</h3>
+          <div class="ecosystem-output-grid">
+            <div class="ecosystem-output">4 SEO Blogs</div>
+            <div class="ecosystem-output">4 LinkedIn Posts</div>
+            <div class="ecosystem-output">4 Carousels</div>
+            <div class="ecosystem-output">Short Videos</div>
+            <div class="ecosystem-output">Newsletter</div>
+            <div class="ecosystem-output">Infographic</div>
+            <div class="ecosystem-output">Downloadable Resource</div>
+            <div class="ecosystem-output">White Paper Excerpts</div>
+          </div>
+        </section>
+
+        <section class="content-card" id="strategy">
+          <p class="module-kicker">Module 2</p>
+          <h2>The Proposed RKS Content Strategy</h2>
+          <p class="section-intro">The future strategy shifts from publishing isolated content to building research campaigns around one central market question. Each month expands that idea into a complete content ecosystem.</p>
+          <div class="callout">
+            <strong>Example campaign</strong>
+            <p><strong>Research topic:</strong> Understanding the Psychology Behind Everyday Purchase Decisions</p>
+          </div>
+          <div class="campaign-flow">
+            <div class="campaign-flow__step"><span>Foundation</span><strong>White Paper</strong><p>The complete research argument and source material.</p></div>
+            <div class="campaign-flow__step"><span>Search</span><strong>Blogs</strong><p>Four SEO-focused entries built from different parts of the thesis.</p></div>
+            <div class="campaign-flow__step"><span>Conversation</span><strong>LinkedIn</strong><p>Thought leadership posts that introduce and interpret the research.</p></div>
+            <div class="campaign-flow__step"><span>Education</span><strong>Carousels &amp; Infographic</strong><p>Visual breakdowns of the most useful frameworks and findings.</p></div>
+            <div class="campaign-flow__step"><span>Distribution</span><strong>Newsletter &amp; Video</strong><p>Monthly recap, downloadable resource, and short-form explanation.</p></div>
+          </div>
+          <p>This approach creates more value from the same research effort while maintaining consistency across every marketing channel.</p>
+        </section>
+
+        <section class="content-card" id="calendar">
+          <p class="module-kicker">Module 3</p>
+          <h2>Editorial Calendar</h2>
+          <p class="section-intro">Review how each week supports the larger monthly campaign rather than functioning independently.</p>
+          <div class="monthly-calendar">
+            <div class="calendar-week">
+              <span>Week 1</span>
+              <strong>Introduce the Conversation</strong>
+              <div class="calendar-day"><b>Tuesday</b><p>Blog + LinkedIn thought leadership post</p></div>
+              <div class="calendar-day"><b>Thursday</b><p>Carousel or video</p></div>
+            </div>
+            <div class="calendar-week">
+              <span>Week 2</span>
+              <strong>Expand the Argument</strong>
+              <div class="calendar-day"><b>Tuesday</b><p>Blog + LinkedIn thought leadership post</p></div>
+              <div class="calendar-day"><b>Thursday</b><p>Carousel or video</p></div>
+            </div>
+            <div class="calendar-week">
+              <span>Week 3</span>
+              <strong>Apply the Insight</strong>
+              <div class="calendar-day"><b>Tuesday</b><p>Blog + LinkedIn thought leadership post</p></div>
+              <div class="calendar-day"><b>Thursday</b><p>Carousel or video</p></div>
+            </div>
+            <div class="calendar-week">
+              <span>Week 4</span>
+              <strong>Conclude and Convert</strong>
+              <div class="calendar-day"><b>Tuesday</b><p>Blog + LinkedIn thought leadership post</p></div>
+              <div class="calendar-day"><b>Thursday</b><p>Carousel or video</p></div>
+            </div>
+          </div>
+          <div class="callout">
+            <strong>End of month</strong>
+            <p>Send the newsletter and promote the complete white paper or downloadable campaign resource.</p>
+          </div>
+        </section>
+
+        <section class="content-card" id="blog-seo">
+          <p class="module-kicker">Module 4</p>
+          <h2>Blog &amp; SEO Resources</h2>
+          <div class="info-grid">
+            <div class="info-tile">
+              <span>Blog template</span>
+              <strong>Standard Content Structure</strong>
+              <p>Review the introduction, heading hierarchy, internal links, calls-to-action, related articles, supporting imagery, and conclusion.</p>
+            </div>
+            <div class="info-tile">
+              <span>SEO checklist</span>
+              <strong>Search Optimization</strong>
+              <p>Review SEO title, meta description, URL slug, focus keyword, internal links, featured image, image filenames, alt text, category selection, and the publishing checklist.</p>
+            </div>
+          </div>
+          <div class="callout">
+            <strong>Use AI carefully</strong>
+            <p>The RKS Marketing GPT can accelerate outlines, first drafts, metadata, and repurposing. Helena must still verify facts, improve the argument, apply the correct brand voice, and make sure the content contributes something original.</p>
+          </div>
+        </section>
+
+        <section class="content-card" id="social">
+          <p class="module-kicker">Module 5</p>
+          <h2>Social Content Templates</h2>
+          <p class="section-intro">Every blog should create multiple social opportunities rather than existing as a single website asset.</p>
+          <div class="resource-card-grid">
+            <article class="resource-card">
+              <span class="resource-card__eyebrow">LinkedIn</span>
+              <h3>Thought Leadership Format</h3>
+              <p>Review the hook, central idea, personal versus company voice, supporting evidence, takeaway, and CTA structure.</p>
+            </article>
+            <article class="resource-card">
+              <span class="resource-card__eyebrow">Carousel</span>
+              <h3>Educational Story Flow</h3>
+              <p>Review the opening hook, slide sequence, educational progression, supporting visuals, summary, and final CTA.</p>
+            </article>
+            <article class="resource-card">
+              <span class="resource-card__eyebrow">Video</span>
+              <h3>Short-Form Content</h3>
+              <p>Review One Minute Insights, interview clips, educational videos, promotional videos, captions, titles, and thumbnails.</p>
+            </article>
+          </div>
+          <h3>Repurposing Workflow</h3>
+          <div class="ecosystem-output-grid">
+            <div class="ecosystem-output">LinkedIn Post</div>
+            <div class="ecosystem-output">Carousel</div>
+            <div class="ecosystem-output">Short Video</div>
+            <div class="ecosystem-output">Newsletter Section</div>
+            <div class="ecosystem-output">White Paper Excerpt</div>
+          </div>
+        </section>
+
+        <section class="content-card" id="visual-essays">
+          <p class="module-kicker">Module 6</p>
+          <h2>Visual Essay Templates</h2>
+          <p class="section-intro">Review how visual essays transform a project, research idea, or design principle into a highly visual thought-leadership story rather than a conventional product promotion.</p>
+          <div class="standards-grid">
+            <article><strong>Template Layouts</strong><p>Review approved page structures, hierarchy, pacing, image placement, and narrative sequence.</p></article>
+            <article><strong>Source Files</strong><p>Review Photoshop files, Illustrator assets, linked imagery, typography, and complete project folders.</p></article>
+            <article><strong>Exports</strong><p>Review website specifications, LinkedIn sizing, blog imagery, compression, filenames, and final export locations.</p></article>
+          </div>
+          <div class="callout">
+            <strong>Review previous examples</strong>
+            <p>Identify how successful visual essays educate the audience, show RKS expertise, and create a narrative around human needs, design decisions, and outcomes.</p>
+          </div>
+        </section>
+
+        <section class="content-card" id="newsletter">
+          <p class="module-kicker">Module 7</p>
+          <h2>Newsletter Workflow</h2>
+          <div class="info-grid">
+            <div class="info-tile">
+              <span>Structure</span>
+              <strong>Monthly Editorial Package</strong>
+              <p>Review previous newsletters, copy format, featured article placement, supporting sections, image assets, and the white paper promotion.</p>
+            </div>
+            <div class="info-tile">
+              <span>Production</span>
+              <strong>Review, Lists &amp; Send</strong>
+              <p>Review the email lists, approval workflow, links, test send, quality control, scheduling, and final sending process.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-card" id="video">
+          <p class="module-kicker">Module 8</p>
+          <h2>Video Workflow</h2>
+          <div class="resource-card-grid">
+            <article class="resource-card">
+              <span class="resource-card__eyebrow">Project structure</span>
+              <h3>Keep the Complete Folder Together</h3>
+              <p>Review raw footage, Premiere or DaVinci projects, graphics, linked assets, captions, music, thumbnails, and any supporting source files.</p>
+            </article>
+            <article class="resource-card">
+              <span class="resource-card__eyebrow">Exports</span>
+              <h3>Use the Correct Presets</h3>
+              <p>Review format, dimensions, captions, audio, file naming, thumbnail exports, and channel-specific versions.</p>
+            </article>
+            <article class="resource-card">
+              <span class="resource-card__eyebrow">Publishing</span>
+              <h3>Connect Video to the Campaign</h3>
+              <p>Prepare the title, description, CTA, tags, links, scheduling, social promotion, and storage of final exports.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-card" id="paai">
+          <p class="module-kicker">Module 9</p>
+          <h2>PA-AI Content Priorities</h2>
+          <p class="section-intro">Unlike RKS, PA-AI is currently focused less on broad thought leadership and more on audience growth. The immediate priority is creating a repeatable outreach campaign for students and professors.</p>
+          <div class="info-grid">
+            <div class="info-tile">
+              <span>Student outreach</span>
+              <strong>Build Awareness and Relevance</strong>
+              <p>Develop educational content, explain PA-AI’s advantage for students, create useful downloadable resources, and give students a clear reason to engage.</p>
+            </div>
+            <div class="info-tile">
+              <span>Professor outreach</span>
+              <strong>Create a Targeted Education Campaign</strong>
+              <p>Identify professors teaching AI, innovation, marketing, product design, and MBA courses; build focused lists; and create outreach that positions PA-AI as an educational resource.</p>
+            </div>
+          </div>
+          <div class="callout">
+            <strong>Campaign goal</strong>
+            <p>Create a repeatable acquisition funnel that encourages professors and students to engage with PA-AI resources before expanding into broader enterprise marketing.</p>
+          </div>
+        </section>
+
+        <section class="content-card" id="ai-acceleration">
+          <p class="module-kicker">AI Integration</p>
+          <h2>Use the Custom GPTs to Accelerate Execution</h2>
+          <p class="section-intro">After reviewing the templates, demonstrate how the RKS Marketing GPT can turn a single white paper into first drafts for multiple channels while preserving strategy, brand standards, and Human Intelligence as the differentiators.</p>
+          <div class="campaign-flow">
+            <div class="campaign-flow__step"><span>Input</span><strong>White Paper</strong><p>Upload or reference the research foundation, core thesis, evidence, and intended audience.</p></div>
+            <div class="campaign-flow__step"><span>Draft</span><strong>SEO Blog</strong><p>Generate an outline, first draft, metadata, related topics, and internal-link suggestions.</p></div>
+            <div class="campaign-flow__step"><span>Social</span><strong>LinkedIn &amp; Carousel</strong><p>Create a thought-leadership post and educational slide sequence from the same argument.</p></div>
+            <div class="campaign-flow__step"><span>Distribution</span><strong>Newsletter</strong><p>Create a concise feature, summary, CTA, and white paper promotion.</p></div>
+            <div class="campaign-flow__step"><span>Video</span><strong>Script &amp; Clips</strong><p>Generate a short script, talking points, title ideas, and channel-specific supporting copy.</p></div>
+          </div>
+          <div class="callout">
+            <strong>AI accelerates execution</strong>
+            <p>It does not replace research quality, strategic judgment, original insight, fact-checking, brand review, or human approval.</p>
+          </div>
+        </section>
+
+        <section class="content-card deliverable-card" id="deliverables">
+          <p class="module-kicker">Session 4 Deliverable</p>
+          <h2>Create a One-Month Content Campaign</h2>
+          <p class="section-intro">Using the proposed RKS content strategy, develop a complete campaign around one industry topic. The goal is not to produce every asset, but to demonstrate how one idea becomes an integrated multi-channel campaign.</p>
+          <div class="checklist-panel">
+            <label><input type="checkbox"/> Identify one research opportunity, market trend, or important industry conversation.</label>
+            <label><input type="checkbox"/> Write the central campaign thesis and explain the RKS perspective.</label>
+            <label><input type="checkbox"/> Develop four SEO blog titles.</label>
+            <label><input type="checkbox"/> Develop four LinkedIn thought-leadership post concepts.</label>
+            <label><input type="checkbox"/> Develop four supporting carousel or video ideas.</label>
+            <label><input type="checkbox"/> Create one newsletter concept.</label>
+            <label><input type="checkbox"/> Define one downloadable white paper topic.</label>
+            <label><input type="checkbox"/> Show how every asset supports the same campaign rather than functioning independently.</label>
+            <label><input type="checkbox"/> Use the RKS Marketing GPT to create at least one sample first draft and document what required human improvement.</label>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+  <script src="../module.js"></script>
+</body>
+</html>
